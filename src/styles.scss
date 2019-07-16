@@ -1,1 +1,154 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/**Effects */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 50px;
+    }
+    50% {
+        width: 200px;
+    }
+    100% {
+        width: 315px;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 50px;
+    }
+    50% {
+        width: 200px;
+    }
+    100% {
+        width: 315px;
+    }
+}
+
+@-webkit-keyframes slideOut {
+    0% {
+        width: 315px;
+    }
+    25% {
+        width: 200px;
+    }
+    50% {
+        width: 50px;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        width: 315px;
+    }
+    25% {
+        width: 200px;
+    }
+    50% {
+        width: 50px;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+
+/**Common class */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slideIn {
+    /*-webkit-animation-name: slideIn;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-delay: -1s;
+    display: block;*/
+    right: 0 !important;
+}
+
+.slideOut {
+    -webkit-animation-name: slideOut;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: slideOut;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    width: 0;
+    padding: 0;
+}
+
+.fadeIn {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.btn-icn {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+<section id="header-wrapper">
+    <h1><a routerLink="/">PhotoStock</a></h1>
+    <section id="sidebar-wrapper" [ngClass]="{'showMenu': showMenu}">
+        <div class="menu-open-close" (click)="menuOpenClose($event)" *ngIf="!showMenu">
+            <img class="btn-icn" src="../../assets/images/menu-icn.png" />
+        </div>
+        <span class="menu-close" (click)="menuClose($event)">
+            <img class="btn-icn" src="../../assets/images/close-icn.png" />
+        </span>
+        <nav>
+            <a routerLink="/nature">Nature</a>
+            <a routerLink="/festival">Festival</a>
+            <a routerLink="/seasons">Seasons</a>
+            <a routerLink="/signin">SignIn</a>
+        </nav>
+    </section>
+</section>
