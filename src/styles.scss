@@ -7,8 +7,7 @@
     -moz-box-sizing: border-box;
 }
 
-html,
-body {
+html body {
     margin: 0;
     padding: 0;
     font-size: 15px;
@@ -24,19 +23,14 @@ a:active {
     text-decoration: none;
 }
 
+nav a:hover {
+    font-size: 1.4rem !important;
+}
+
 
 /**Effects */
 
 @-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -109,8 +103,18 @@ a:active {
 /**Common class */
 
 .container {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
+}
+
+.sub-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    p {
+        margin-bottom: 30px;
+    }
 }
 
 .slideIn {
@@ -121,7 +125,7 @@ a:active {
     animation-duration: 2s;
     animation-delay: -1s;
     display: block;*/
-    right: 0 !important;
+    left: 0 !important;
 }
 
 .slideOut {
@@ -151,4 +155,18 @@ a:active {
     height: 25px;
     width: 25px;
     cursor: pointer;
+}
+
+.btn {
+    background-image: linear-gradient(to bottom, #5E73E8, #8D9BE7);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to bottom, #8D9BE7, #5E73E8);
 }

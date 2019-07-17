@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { SlickModule } from 'ngx-slick';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FestivalComponent } from './festival/festival.component';
 import { SeasonsComponent } from './seasons/seasons.component';
 import { SigninComponent } from './signin/signin.component';
+import { PhotoslideComponent } from './photoslide/photoslide.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { SigninComponent } from './signin/signin.component';
     DashboardComponent,
     FestivalComponent,
     SeasonsComponent,
-    SigninComponent
+    SigninComponent,
+    PhotoslideComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
